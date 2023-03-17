@@ -13,7 +13,7 @@ public class CategoryService {
 
     public boolean addNewCategory(String categoryName) {
         if (!categoryDao.existsByName(categoryName)) {
-            Category category = new Category(null, null);
+            Category category = new Category(null, categoryName);
             categoryDao.insert(category);
         }
         return false;

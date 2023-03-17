@@ -17,8 +17,13 @@ public class Category {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(length = 60)
+    private String name;
+
     @OneToMany(mappedBy = "category", fetch = FetchType.EAGER)
     private List<Expense> expenses;
 
+    public Category(Integer id, String name) {
+        this.id = id;
+        this.name = name;
+    }
 }
