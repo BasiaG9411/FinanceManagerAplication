@@ -19,5 +19,13 @@ public abstract class AbstractDao<T> {
         session.close();
     }
 
+    public void delete (T t) {
+        Session session = Connection.getSession();
+        Transaction transaction = session.beginTransaction();
+        session.delete(t);
+        transaction.commit();
+        session.close();
+    }
+
 
 }

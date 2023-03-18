@@ -6,7 +6,6 @@ import org.example.entity.Category;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
 
-import java.util.List;
 
 
 public class CategoryDao extends AbstractDao<Category> {

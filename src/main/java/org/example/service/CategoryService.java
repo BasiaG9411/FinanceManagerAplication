@@ -2,10 +2,7 @@ package org.example.service;
 
 import org.example.Dao.CategoryDao;
 import org.example.entity.Category;
-import org.example.entity.Expense;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class CategoryService {
 
@@ -15,6 +12,15 @@ public class CategoryService {
         if (!categoryDao.existsByName(categoryName)) {
             Category category = new Category(null, categoryName);
             categoryDao.insert(category);
+        }
+        return false;
+    }
+
+
+    public boolean deleteCategory(String categoryName) {
+        if (categoryDao.existsByName(categoryName)) {
+            Category category = new Category(null, categoryName);
+            categoryDao.delete(category);
         }
         return false;
     }

@@ -1,11 +1,11 @@
 package org.example.entity;
 
-import com.mysql.cj.protocol.ColumnDefinition;
+
 import jakarta.persistence.*;
 import lombok.*;
 
 import java.math.BigDecimal;
-import java.math.BigInteger;
+
 import java.time.LocalDate;
 @Entity
 @Getter
@@ -20,10 +20,12 @@ public class Expense {
     @Column (columnDefinition = "DECIMAL 8,2")
     private BigDecimal amount;
 
-    private LocalDate addDate;
+    private LocalDate date;
     @Column (length = 150)
     private String commentary;
     @JoinColumn(name = "category_id")
     @ManyToOne
     private Category category;
+
+
 }

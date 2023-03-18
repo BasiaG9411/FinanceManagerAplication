@@ -13,14 +13,14 @@ import java.time.LocalDate;
 public class Income {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int incomeId;
+    private int id;
     @NonNull
     @Column (columnDefinition = "DECIMAL 8,2")
-    private BigDecimal incomeAmount;
+    private BigDecimal amount;
     @NonNull
-    private LocalDate incomeAddDate;
+    private LocalDate addDate;
     @Column(length = 150)
-    private String incomeCommentary;
+    private String commentary;
 
 
 }
