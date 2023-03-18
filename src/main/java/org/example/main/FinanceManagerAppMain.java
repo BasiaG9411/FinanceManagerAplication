@@ -30,13 +30,14 @@ public class FinanceManagerAppMain {
             System.out.println("Wybierz opcję: ");
             System.out.println("0 - zakończ");
             System.out.println("1 - Dodaj wydatek: ");
+            System.out.println("3 - Usuń wydatek: ");
+            System.out.println("6 - Wyświetl wszystkie wydatki");
             System.out.println("12 - Dodaj kategorię: ");
             System.out.println("13 - Usuń kategorię: ");
 
             choose = scanner.nextInt();
 
             switch (choose) {
-
 
 
                 case 0 -> {
@@ -61,6 +62,29 @@ public class FinanceManagerAppMain {
                         System.err.println(e.getMessage());
                     }
                 }
+
+                case 3 -> {
+                    try {
+                        System.out.println("Podaj id wydatku do usunięcia: ");
+                        scanner.nextLine();
+                        Integer id = scanner.nextInt();
+                        expenseService.deleteExpense(id);
+                    } catch (IllegalArgumentException e) {
+                        System.err.println(e.getMessage());
+                    }
+
+                }
+
+                case 6 -> {
+                    try {
+                        System.out.println("Lista wszystkich wydatków: ");
+                        scanner.nextLine();
+                        expenseService.showAllExpenses();
+                    } catch (IllegalArgumentException e) {
+                        System.err.println(e.getMessage());
+                    }
+
+                }
                 case 12 -> {
                     try {
                         System.out.println("Podaj nazwę nowej kategorii: ");
@@ -84,7 +108,7 @@ public class FinanceManagerAppMain {
                 }
             }
         }
-        while (true) ;
+        while (true);
     }
 }
 

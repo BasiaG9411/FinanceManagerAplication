@@ -7,6 +7,8 @@ import org.example.entity.Expenses;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class ExpenseService {
 
@@ -21,11 +23,18 @@ public class ExpenseService {
 
     }
 
-    public void showAllExpenses() {
+    public boolean deleteExpense(Integer id) {
+        Expenses expenses = expenseDao.findById(id);
+        expenseDao.deleteExpense(expenses);
+        return true;
+    }
 
-
-
+    public List<Expenses> showAllExpenses() {
+        return expenseDao.findAll();
     }
 
 
 }
+
+
+

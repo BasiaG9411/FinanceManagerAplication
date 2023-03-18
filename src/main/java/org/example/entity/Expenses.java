@@ -1,10 +1,7 @@
 package org.example.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import org.example.entity.Category;
 
 import java.math.BigDecimal;
@@ -31,7 +28,14 @@ public class Expenses {
     @ManyToOne
     private Category category;
 
-
-
-
+    @Override
+    public String toString() {
+        return "Expenses{" +
+                "id= " + id +
+                ", amount= " + amount +
+                ", date= " + date +
+                ", commentary= '" + commentary + '\'' +
+                ", category_id =" + category.getId() +
+                '}';
+    }
 }
