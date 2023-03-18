@@ -15,6 +15,7 @@
 
         <mapping class="org.example.entity.Category"/>
         <mapping class="org.example.entity.Expenses"/>
+        <mapping class="org.example.entity.Income"/>
 
 
 

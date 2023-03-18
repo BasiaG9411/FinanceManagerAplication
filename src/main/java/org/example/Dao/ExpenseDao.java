@@ -1,13 +1,11 @@
 package org.example.Dao;
 
 import org.example.Connection;
-import org.example.entity.Category;
 import org.example.entity.Expenses;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
-
 import java.util.List;
-import java.util.stream.Collectors;
+
 
 
 public class ExpenseDao extends AbstractDao<Expenses> {

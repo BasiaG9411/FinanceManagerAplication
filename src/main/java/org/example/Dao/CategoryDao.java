@@ -6,6 +6,7 @@ import org.example.entity.Category;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
 
+import java.util.List;
 
 
 public class CategoryDao extends AbstractDao<Category> {
@@ -35,6 +36,19 @@ public class CategoryDao extends AbstractDao<Category> {
 
     public void deleteCategory(Category category) {
         delete(category);
+    }
+
+    public List<Category> showAllCategory() {
+        String hql = "FROM Category";
+        Session session = Connection.getSession();
+        Query<Category> query = session.createQuery(hql, Category.class);
+
+        List<Category> resultList = query.getResultList();
+
+        session.close();
+
+        return resultList;
+
     }
 }
 

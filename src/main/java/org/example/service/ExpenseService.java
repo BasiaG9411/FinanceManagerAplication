@@ -4,11 +4,10 @@ import org.example.Dao.CategoryDao;
 import org.example.Dao.ExpenseDao;
 import org.example.entity.Category;
 import org.example.entity.Expenses;
-
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
-import java.util.stream.Collectors;
+
 
 public class ExpenseService {
 

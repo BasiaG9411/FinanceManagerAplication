@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3fe41450-5ed6-4ee8-b6a8-d83592dcc181" name="Changes" comment="Version 1.3. Application scheme.&#10;New features - add category - working edition.&#10;--add expense working version&#10;--add deleteexpenses working version">
+    <list default="true" id="3fe41450-5ed6-4ee8-b6a8-d83592dcc181" name="Changes" comment="Version 1.4. Application scheme.&#10;New features - add category - working edition.&#10;--add expense working version&#10;--add deleteexpenses working &#10;--add showexpenses working">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Dao/IncomeDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Dao/CategoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Dao/CategoryDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entity/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entity/Expenses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/Expenses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entity/Income.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/Income.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/main/FinanceManagerAppMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/main/FinanceManagerAppMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/IncomeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/IncomeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679149816943</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Version 1.4. Application scheme.&#10;New features - add category - working edition.&#10;--add expense working version&#10;--add deleteexpenses working &#10;--add showexpenses working">
+      <created>1679150379234</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1679150379234</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -117,6 +132,7 @@
     <MESSAGE value="Version 1.2. Application scheme.&#10;New features - add category - working edition.&#10;--add expense don't work" />
     <MESSAGE value="Version 1.3. Application scheme.&#10;New features - add category - working edition.&#10;--add expense working version" />
     <MESSAGE value="Version 1.3. Application scheme.&#10;New features - add category - working edition.&#10;--add expense working version&#10;--add deleteexpenses working version" />
-    <option name="LAST_COMMIT_MESSAGE" value="Version 1.3. Application scheme.&#10;New features - add category - working edition.&#10;--add expense working version&#10;--add deleteexpenses working version" />
+    <MESSAGE value="Version 1.4. Application scheme.&#10;New features - add category - working edition.&#10;--add expense working version&#10;--add deleteexpenses working &#10;--add showexpenses working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version 1.4. Application scheme.&#10;New features - add category - working edition.&#10;--add expense working version&#10;--add deleteexpenses working &#10;--add showexpenses working" />
   </component>
 </project>

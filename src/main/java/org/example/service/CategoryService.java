@@ -2,6 +2,7 @@ package org.example.service;
 
 import org.example.Dao.CategoryDao;
 import org.example.entity.Category;
+import java.util.List;
 
 
 public class CategoryService {
@@ -21,6 +22,10 @@ public class CategoryService {
             Category category = categoryDao.getByName(categoryName);
             categoryDao.deleteCategory(category);
             return true;
+    }
+
+    public List<Category> showAllCategories() {
+        return categoryDao.showAllCategory();
     }
 }
 
