@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3fe41450-5ed6-4ee8-b6a8-d83592dcc181" name="Changes" comment="Version 1.3. Application scheme.&#10;New features - add category - working edition.&#10;--add expense working version">
+    <list default="true" id="3fe41450-5ed6-4ee8-b6a8-d83592dcc181" name="Changes" comment="Version 1.3. Application scheme.&#10;New features - add category - working edition.&#10;--add expense working version&#10;--add deleteexpenses working version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Dao/ExpenseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Dao/ExpenseDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entity/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entity/Expenses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/Expenses.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/main/FinanceManagerAppMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/main/FinanceManagerAppMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/ExpenseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/ExpenseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679142969293</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Version 1.3. Application scheme.&#10;New features - add category - working edition.&#10;--add expense working version&#10;--add deleteexpenses working version">
+      <created>1679149816943</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1679149816943</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -114,6 +116,7 @@
     <MESSAGE value="Version 1.2. Application scheme.&#10;New features - add category - working edition." />
     <MESSAGE value="Version 1.2. Application scheme.&#10;New features - add category - working edition.&#10;--add expense don't work" />
     <MESSAGE value="Version 1.3. Application scheme.&#10;New features - add category - working edition.&#10;--add expense working version" />
-    <option name="LAST_COMMIT_MESSAGE" value="Version 1.3. Application scheme.&#10;New features - add category - working edition.&#10;--add expense working version" />
+    <MESSAGE value="Version 1.3. Application scheme.&#10;New features - add category - working edition.&#10;--add expense working version&#10;--add deleteexpenses working version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version 1.3. Application scheme.&#10;New features - add category - working edition.&#10;--add expense working version&#10;--add deleteexpenses working version" />
   </component>
 </project>

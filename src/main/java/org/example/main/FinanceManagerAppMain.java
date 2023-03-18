@@ -3,6 +3,7 @@ package org.example.main;
 import org.example.Connection;
 import org.example.Dao.CategoryDao;
 import org.example.entity.Category;
+import org.example.entity.Expenses;
 import org.example.service.CategoryService;
 import org.example.service.ExpenseService;
 
@@ -79,7 +80,9 @@ public class FinanceManagerAppMain {
                     try {
                         System.out.println("Lista wszystkich wydatków: ");
                         scanner.nextLine();
-                        expenseService.showAllExpenses();
+                        for (Expenses expenses : expenseService.showAllExpenses()) {
+                            System.out.println(String.format("Wydatek id: %s, Amount: %s, Date: %s, Comment: %s, Category: %s", expenses.getId(), expenses.getAmount(), expenses.getDate(),expenses.getCommentary(), expenses.getCategory().getName()));
+                        }
                     } catch (IllegalArgumentException e) {
                         System.err.println(e.getMessage());
                     }
