@@ -1,10 +1,10 @@
 package org.example.Dao;
 
-import org.example.entity.Expense;
+import org.example.entity.Expenses;
 
-public class ExpenseDao extends AbstractDao<Expense> {
+public class ExpenseDao extends AbstractDao<Expenses> {
 
     public ExpenseDao() {
-        super(Expense.class);
+        super(Expenses.class);
     }
 }

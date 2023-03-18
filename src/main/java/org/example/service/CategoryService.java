@@ -18,11 +18,9 @@ public class CategoryService {
 
 
     public boolean deleteCategory(String categoryName) {
-        if (categoryDao.existsByName(categoryName)) {
-            Category category = new Category(null, categoryName);
-            categoryDao.delete(category);
-        }
-        return false;
+            Category category = categoryDao.getByName(categoryName);
+            categoryDao.deleteCategory(category);
+            return true;
     }
 }
 

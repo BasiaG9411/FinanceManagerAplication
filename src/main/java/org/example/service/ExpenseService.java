@@ -3,12 +3,10 @@ package org.example.service;
 import org.example.Dao.CategoryDao;
 import org.example.Dao.ExpenseDao;
 import org.example.entity.Category;
-import org.example.entity.Expense;
+import org.example.entity.Expenses;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.Arrays;
 
 public class ExpenseService {
 
@@ -18,8 +16,14 @@ public class ExpenseService {
 
     public void addExpense(BigDecimal ammount, String commentary, LocalDate dateFrom, Category category1) {
         Category category = categoryDao.getByName(category1.getName());
-        Expense expense = new Expense(null, ammount, dateFrom, commentary, category);
+        Expenses expense = new Expenses(null, ammount, dateFrom, commentary, category);
         expenseDao.insert(expense);
+
+    }
+
+    public void showAllExpenses() {
+
+
 
     }
 

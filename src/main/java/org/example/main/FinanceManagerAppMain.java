@@ -3,12 +3,13 @@ package org.example.main;
 import org.example.Connection;
 import org.example.Dao.CategoryDao;
 import org.example.entity.Category;
-import org.example.entity.Expense;
 import org.example.service.CategoryService;
 import org.example.service.ExpenseService;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 
@@ -72,7 +73,6 @@ public class FinanceManagerAppMain {
                 }
                 case 13 -> {
                     try {
-                        System.out.println("Lista kategori: ");
                         System.out.println("Podaj nazwę kategorii do usunięcia: ");
                         scanner.nextLine();
                         String categoryName = scanner.nextLine();

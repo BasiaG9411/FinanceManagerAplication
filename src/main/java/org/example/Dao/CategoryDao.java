@@ -30,6 +30,12 @@ public class CategoryDao extends AbstractDao<Category> {
     public boolean existsByName(String categoryName) {
         return getByName(categoryName) == null ? false : true;
     }
+
+
+
+    public void deleteCategory(Category category) {
+        delete(category);
+    }
 }
 
 
