@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3fe41450-5ed6-4ee8-b6a8-d83592dcc181" name="Changes" comment="Version 1.4. Application scheme.&#10;New features - add category - working edition.&#10;--add expense working version&#10;--add deleteexpenses working &#10;--add showexpenses working">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Dao/IncomeDao.java" afterDir="false" />
+    <list default="true" id="3fe41450-5ed6-4ee8-b6a8-d83592dcc181" name="Changes" comment="Version 1.5. Application scheme.&#10;New features - add/delete category &#10;--add/delete/show expense&#10;--add/delete/show income&#10;--working version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Dao/CategoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Dao/CategoryDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entity/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entity/Expenses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/Expenses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entity/Income.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/Income.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Dao/ExpenseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Dao/ExpenseDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/main/FinanceManagerAppMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/main/FinanceManagerAppMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/CategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/IncomeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/IncomeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/ExpenseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/ExpenseService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,14 +45,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/barba/FinanceManagerAplication"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/barba/FinanceManagerAplication&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\barba\FinanceManagerAplication\src\main\resources" />
@@ -122,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679150379234</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Version 1.5. Application scheme.&#10;New features - add/delete category &#10;--add/delete/show expense&#10;--add/delete/show income&#10;--working version">
+      <created>1679174025768</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1679174025768</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -133,6 +134,7 @@
     <MESSAGE value="Version 1.3. Application scheme.&#10;New features - add category - working edition.&#10;--add expense working version" />
     <MESSAGE value="Version 1.3. Application scheme.&#10;New features - add category - working edition.&#10;--add expense working version&#10;--add deleteexpenses working version" />
     <MESSAGE value="Version 1.4. Application scheme.&#10;New features - add category - working edition.&#10;--add expense working version&#10;--add deleteexpenses working &#10;--add showexpenses working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Version 1.4. Application scheme.&#10;New features - add category - working edition.&#10;--add expense working version&#10;--add deleteexpenses working &#10;--add showexpenses working" />
+    <MESSAGE value="Version 1.5. Application scheme.&#10;New features - add/delete category &#10;--add/delete/show expense&#10;--add/delete/show income&#10;--working version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version 1.5. Application scheme.&#10;New features - add/delete category &#10;--add/delete/show expense&#10;--add/delete/show income&#10;--working version" />
   </component>
 </project>

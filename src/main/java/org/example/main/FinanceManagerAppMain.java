@@ -39,7 +39,10 @@ public class FinanceManagerAppMain {
             System.out.println("3 - Usuń wydatek: ");
             System.out.println("4 - Usuń przychód: ");
             System.out.println("6 - Wyświetl wszystkie wydatki: ");
+            System.out.println("8 - Wyświetl wszystkie wydatki na podstawie kategorii: ");
+            //System.out.println("9 - Wyświetl wydatki na podstawie kategorii: ");
             System.out.println("10 - Wyświetl wszystkie przychody: ");
+            System.out.println("11 - Saldo: ");
             System.out.println("12 - Dodaj kategorię: ");
             System.out.println("13 - Usuń kategorię: ");
 
@@ -123,6 +126,22 @@ public class FinanceManagerAppMain {
                     }
                 }
 
+                case 8 -> {
+                    try {
+                        System.out.println("Podaj id kategorii: ");
+                        Integer id = scanner.nextInt();
+                        List<Expenses> expensesByCategories = expenseService.showSumOfAllExpensesSortedByCategory(id);
+                        for (Expenses expenses : expensesByCategories) {
+                            System.out.printf("Wydatek o id: %s, Amount: %s, Date: %s, Comment: %s, Category: %s",
+                                    expenses.getId(), expenses.getAmount(), expenses.getAddDate(),
+                                    expenses.getCommentary(), expenses.getCategory().getName() + "\n");
+                        }
+
+                    } catch (IllegalArgumentException e) {
+                        System.err.println(e.getMessage());
+                    }
+                }
+
                 case 10 -> {
                     List<Income> incomes = incomeService.showAllIncomes();
                     System.out.println("Lista wszystkich przychodów: \t");
@@ -132,6 +151,11 @@ public class FinanceManagerAppMain {
                                 income.getId(), income.getAmount(), income.getAddDate(), income.getCommentary() + "\n");
                     }
                 }
+
+                case 11 -> {
+                    System.out.println("Aktualne saldo wynosi: " + expenseService.showSaldo());
+                }
+
 
                 case 12 -> {
                     try {

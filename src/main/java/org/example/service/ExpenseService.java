@@ -32,6 +32,15 @@ public class ExpenseService {
         return expenseDao.findAll();
     }
 
+    public List<Expenses> showSumOfAllExpensesSortedByCategory(Integer categoryId) {
+
+        return expenseDao.showAllExpensesByCategory(categoryId);
+    }
+
+    public BigDecimal showSaldo() {
+
+        return expenseDao.saldo();
+    }
 
 }
 
